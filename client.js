@@ -22,8 +22,8 @@ class Request {
 
     toString() {
         return `${this.method} ${this.path} HTTP/1.1\r
-        ${object.keys(this.headers).map(key => `${key}: ${this.headers[key]}`).join('\r\n')}\r
-        \r
+${object.keys(this.headers).map(key => `${key}: ${this.headers[key]}`).join('\r\n')}\r
+\r
         ${this.bodyText}`
     }
 
